@@ -52,8 +52,8 @@ https://github.com/Obelisk-CS4250/coin-wheel-game
 **Team Members** <br />
 | Name | Email |
 | ---- | ----- |
-Levi Portenier | lporteni@msudenver.edu
-James Niedfeldt | jniedfe1@msudenver.edu
-Doug McLaughlin | dmclau12@msudenver.edu
-Jon Bowen | jbowen10@msudenver.edu
-Evan Ballinger | eballing@msudenver.edu
+| Levi Portenier | lporteni@msudenver.edu |
+| James Niedfeldt | jniedfe1@msudenver.edu |
+| Doug McLaughlin | dmclau12@msudenver.edu |
+| Jon Bowen | jbowen10@msudenver.edu |
+| Evan Ballinger | eballing@msudenver.edu |
