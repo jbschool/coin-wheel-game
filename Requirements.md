@@ -50,8 +50,8 @@ https://github.com/Obelisk-CS4250/coin-wheel-game
 1. Checkstyle for code format standard
 
 **Team Members** <br />
-Name | Email
----- | -----
+| Name | Email |
+| ---- | ----- |
 Levi Portenier | lporteni@msudenver.edu
 James Niedfeldt | jniedfe1@msudenver.edu
 Doug McLaughlin | dmclau12@msudenver.edu
