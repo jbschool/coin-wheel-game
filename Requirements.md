@@ -36,8 +36,10 @@ https://github.com/Obelisk-CS4250/coin-wheel-game
 1. Game wheel has 2 or more sections
 1. Generated game always has at least 1 of each coin value
 1. The game is honest: alerts player when coin values all match and when no turns remain
-1. Persist past data? (db or text file)
-1. Interface requirements: Console vs GUI (nice to have) vs API
+1. The program will expose an API that allows one round of game play.
+1. Inputs: Number of sections, Max Number of Turns, Number of coins to reveal.
+1. Outputs: Win or Lose, Number of turns used, Number of Heads remaining, Number of Tails remaining, Initial number of heads, initial number of tails.
+1. Interface requirements: Console vs GUI (nice to have) vs API (?)
 1. Automated simulation and/or run once with human interface
 1. Game alerts when user has won or when user has used too many spins
 
