@@ -7,14 +7,14 @@ https://github.com/Obelisk-CS4250/coin-wheel-game
 
 
 **Game Process and Rules**
-1. Coins have one of two possible values: heads (H) and tails (T)
-1. The wheel is divided into 2 or more sections
+1. Coins have one of two possible states: heads (H) and tails (T)
+1. The wheel is divided into 1 or more sections
 1. The game begins with coins in each section having a value of H or T chosen randomly
 1. Player turn
-   1. If the value of all coins is the same, the player wins and the game finishes
+   1. The game ends when a player runs out of spins or all coins are in the same state
    1. The player is shown the value of the coins in a subset of the wheel sections
    1. The player may elect to change the value of any coins the player is shown
-   1. Coin values are again hidden from the player and the wheel is spun (in a physical game, the player might try to track the location of wheel sections. How to handle this in a virtual game with limited interface?)
+   1. Coin values are again hidden from the player and the wheel is spun
 1. The game concludes with the player winning the instant all values of the coins are the same
 1. The game concludes with the player losing after some number of turns if the player has not won
 
@@ -32,13 +32,10 @@ https://github.com/Obelisk-CS4250/coin-wheel-game
 
 
 **Acceptance Criteria For Discussion** <br />
-1. Initial game state does not result in player winning without taking a turn
-1. Game wheel has 2 or more sections
-1. Generated game always has at least 1 of each coin value
 1. The game is honest: alerts player when coin values all match and when no turns remain
 1. The program will expose an API that allows one round of game play.
-1. Inputs: Number of sections, Max Number of Turns, Number of coins to reveal.
-1. Outputs: Win or Lose, Number of turns used, Number of Heads remaining, Number of Tails remaining, Initial number of heads, initial number of tails.
+1. Inputs: Number of sections(1 or more), Max Number of Turns (optional - 1 or more), Number of coins to reveal(at least 1), initial state of the coins
+1. Outputs: Win or Lose, Number of turns used, Number of Heads remaining, Number of Tails remaining, Initial configuration of coins, stats of game simulation(max, mean, min # of turns to win, etc)
 1. Interface requirements: Console vs GUI (nice to have) vs API (?)
 1. Automated simulation and/or run once with human interface
 1. Game alerts when user has won or when user has used too many spins
