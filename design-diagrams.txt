@@ -1,0 +1,43 @@
+| <<enumeration>> |
+| CoinState       |
+|-----------------|
+| H               |
+| T               |
+
+
+| Coin                  |
+|-----------------------|
+| state : CoinState     |
+|-----------------------|
+| Coin()                |
+| Coin(CoinState state) |
+| CoinState getState()  |
+| void flip()           |
+
+
+| Slot               |
+|--------------------|
+| hidden : Boolean   |
+| coin : Coin        |
+|--------------------|
+| Boolean isHidden() |
+| void hide()        |
+| void show()        |
+| void flipCoin()    |
+
+
+| Wheel                        |
+|------------------------------|
+| slots : ArrayList<Slot>      |
+| numberOfSlots : int          |
+|------------------------------|
+| Wheel(Int numberOfSlots)     |
+| void spin()                  |
+| Boolean checkVictory()       |
+| void hideCoins()             |
+| void flipCoin(int index)     |
+| void getSlotState(int index) |
+| void revealSlot(int index)   |
+
+
+
