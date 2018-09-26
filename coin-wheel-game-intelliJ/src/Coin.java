@@ -1,15 +1,20 @@
 public class Coin {
-	private boolean state;
 
-	public Coin(boolean initialState) {
-		state = initialState;
-	}
-	
-	public boolean getState() {
-		return state;
-	}
+    private CoinState state;
 
-	public void flip() {
-		state = !state;
-	}
+    public Coin(CoinState state){
+        this.state = state;
+    }
+
+    public CoinState getState() {
+        return state;
+    }
+
+    public void flip() {
+
+        if (state == CoinState.Heads)
+            state = CoinState.Tails;
+        else
+            state = CoinState.Heads;
+    }
 }
