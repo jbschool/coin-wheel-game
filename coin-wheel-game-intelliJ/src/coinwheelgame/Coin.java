@@ -1,3 +1,5 @@
+package coinwheelgame;
+
 public class Coin {
 
     private CoinState state;
