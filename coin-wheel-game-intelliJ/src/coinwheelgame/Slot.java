@@ -1,3 +1,5 @@
+package coinwheelgame;
+
 public class Slot {
 
     private boolean hidden;

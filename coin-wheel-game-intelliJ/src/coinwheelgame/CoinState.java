@@ -1,3 +1,5 @@
+package coinwheelgame;
+
 /**
  * Represents possible states of coins in the game
  *

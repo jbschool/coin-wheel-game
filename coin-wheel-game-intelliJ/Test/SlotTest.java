@@ -1,4 +1,5 @@
 import org.junit.Test;
+import coinwheelgame.*;
 
 public class SlotTest {
     private Slot slot;
