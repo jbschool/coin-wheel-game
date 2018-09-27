@@ -1,5 +1,5 @@
 * 9/27/18 Thursday
-** DONE We will look into putting our project in a package instead of just using the unnamed package.
+** DONE We will look into putting our project in a package instead of just using the unnamed package. (done)
    CLOSED: [2018-09-27 Thu 10:48]
 ** TODO We will be focusing a lot on the crystal clear process instead of just getting the project completed. Read chapters 1 and 4 of the crystal clear PDF file so we know more about the process.
 ** Jon will look into adding CheckStyle rules to our intelliJ project so our style will be consistent with Dr. Paul's.
