@@ -1,3 +1,4 @@
+import coinwheelgame.Wheel;
 import org.junit.Test;
 
 public class WheelTest {
