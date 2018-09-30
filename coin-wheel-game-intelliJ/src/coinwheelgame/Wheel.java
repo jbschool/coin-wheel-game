@@ -53,10 +53,7 @@ public class Wheel {
                 stateStr += "* ";
             } else {
                 CoinState state = s.getCoinState();
-                if (state == CoinState.HEADS)
-                    stateStr += "H ";
-                else
-                    stateStr += "T ";
+                stateStr += state.getAbbreviation() + " ";
             }
 
             slotsProcessed++;

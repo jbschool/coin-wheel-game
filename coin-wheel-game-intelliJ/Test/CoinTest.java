@@ -6,20 +6,20 @@ public class CoinTest {
 
     @Test()
     public void coinTest() {
-        coin = new Coin(CoinState.Heads);
-        assert(coin.getState() == CoinState.Heads);
+        coin = new Coin(CoinState.HEADS);
+        assert(coin.getState() == CoinState.HEADS);
 
-        coin = new Coin(CoinState.Tails);
-        assert(coin.getState() == CoinState.Tails);
+        coin = new Coin(CoinState.TAILS);
+        assert(coin.getState() == CoinState.TAILS);
     }
 
     @Test()
     public void flipTest() {
-        coin = new Coin(CoinState.Heads);
+        coin = new Coin(CoinState.HEADS);
         coin.flip();
-        assert(coin.getState() == CoinState.Tails);
+        assert(coin.getState() == CoinState.TAILS);
 
         coin.flip();
-        assert(coin.getState() == CoinState.Heads);
+        assert(coin.getState() == CoinState.HEADS);
     }
 }
