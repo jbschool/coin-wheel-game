@@ -30,13 +30,7 @@ public class Wheel {
 
         // random initial coin configuration
         for (int i = 0; i < numSlots; i++) {
-            Coin c;
-            if (_rng.nextBoolean() == true)
-                c = new Coin(CoinState.Heads);
-            else
-                c = new Coin(CoinState.Tails);
-
-            Slot s = new Slot(c, false);
+            Slot s = new Slot(new Coin(), false);
             _slots.add(s);
         }
     }
@@ -59,7 +53,7 @@ public class Wheel {
                 stateStr += "* ";
             } else {
                 CoinState state = s.getCoinState();
-                if (state == CoinState.Heads)
+                if (state == CoinState.HEADS)
                     stateStr += "H ";
                 else
                     stateStr += "T ";
