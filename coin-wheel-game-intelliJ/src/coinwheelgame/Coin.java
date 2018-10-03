@@ -1,5 +1,7 @@
 package coinwheelgame;
 
+import java.util.Random;
+
 public class Coin {
 
     private CoinState state;
@@ -8,15 +10,19 @@ public class Coin {
         this.state = state;
     }
 
+    public Coin() {
+        this.state = CoinState.findByState(new Random().nextBoolean());
+    }
+
     public CoinState getState() {
         return state;
     }
 
     public void flip() {
 
-        if (state == CoinState.Heads)
-            state = CoinState.Tails;
+        if (state == CoinState.HEADS)
+            state = CoinState.TAILS;
         else
-            state = CoinState.Heads;
+            state = CoinState.HEADS;
     }
 }
