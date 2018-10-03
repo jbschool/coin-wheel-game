@@ -1,0 +1,59 @@
+<?xml version = "1.0"?>
+<project  name="Coin-Wheel-Game" basedir="." default="clean">
+
+    <property name = "projectFolder" value = "coin-wheel-game-intelliJ"/>
+    <property name = "jarFileName" value = "coin-wheel-game.jar"/>
+
+    <property name = "src" value = "${projectFolder}/src"/>
+    <property name = "test" value = "${projectFolder}/Test"/>
+
+    <property name = "outFolder" value = "build"/>
+    <property name = "devOut" value = "${outFolder}/dev"/>
+    <property name = "testOut" value = "${outFolder}/test"/>
+    <property name = "jarOut" value = "${outFolder}/jar"/>
+
+    <path id="classpath.test" cache="true">
+        <pathelement location="${projectFolder}/lib/junit-4.12.jar"/>
+        <pathelement location="${projectFolder}/lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="${devOut}"/>
+    </path>
+
+    <!-- BEGIN TARGETS -->
+    <target name="clean">
+        <delete dir="${outFolder}"/>
+    </target>
+
+
+    <target name="buildSource">
+        <mkdir dir="${devOut}"/>
+        <javac includeantruntime="false" srcdir="${src}" destdir="${devOut}">
+            <compilerarg value="-Xlint"/>
+        </javac>
+    </target>
+
+
+    <target name="buildTest" depends="buildSource">
+        <mkdir dir="${testOut}"/>
+        <javac includeantruntime="false" srcdir="${test}" destdir="${testOut}" >
+            <classpath refid="classpath.test"/>
+            <compilerarg value="-Xlint"/>
+        </javac>
+    </target>
+
+
+    <target name="buildJar" depends="buildSource">
+        <mkdir dir="${jarOut}"/>
+        <jar destfile="${jarOut}/coin-wheel-game.jar" basedir="${devOut}">
+            <manifest>
+                <attribute name="Main-Class" value="Runner"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+    <target name="run" depends="buildJar">
+        <java jar="${jarOut}/${jarFileName}" fork="true"/>
+    </target>
+
+
+</project>
