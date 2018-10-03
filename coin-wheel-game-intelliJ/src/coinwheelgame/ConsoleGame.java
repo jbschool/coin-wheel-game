@@ -20,8 +20,15 @@ public class ConsoleGame {
 
         int option = getPlayerOption();
 
-        if (option != QUIT) {
-            play(5);
+        if (option == PLAY_GAME) {
+            System.out.println("Please enter desired number of slots:");
+            System.out.print("> ");
+            Scanner consoleIn = new Scanner(System.in);
+            try {
+                play(consoleIn.nextInt());
+            } catch (InputMismatchException e) {
+                System.out.println("***ERROR: Please enter an integer");
+            }
         } else {
             System.out.println("Thank you for playing!");
             System.out.println("Exiting the game...");
@@ -37,10 +44,10 @@ public class ConsoleGame {
         this.wheel = new Wheel(numSlots);
         System.out.println(this.wheel.wheelInfoAsString() + System.lineSeparator());
 
-        for (int i = 0; i < 5; i++) {
+        /*for (int i = 0; i < 5; i++) {
             this.wheel.spin();
             System.out.println(this.wheel.wheelInfoAsString() + System.lineSeparator());
-        }
+        }*/
 
     }
 
