@@ -4,7 +4,10 @@ import java.util.Random;
 
 /**
  * A Coin object contains reference to a CoinState enum, which has a value of HEADS or TAILS
- * */
+ *
+ * @author Jon Bowen, James Niedfeldt, Evan Ballinger, Doug McLaughlin, Levi Portenier
+ * @version 0.0.1
+ */
 public class Coin {
 
     private CoinState state;

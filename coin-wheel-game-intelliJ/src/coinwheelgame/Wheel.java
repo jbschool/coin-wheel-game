@@ -8,7 +8,7 @@ import java.util.Random;
  * The wheel class exposes the public API that an interface may
  * use to play the game.
  *
- * @author Jon Bowen
+ * @author Jon Bowen, James Niedfeldt, Evan Ballinger, Doug McLaughlin, Levi Portenier
  * @version 0.0.1
  */
 public class Wheel {
