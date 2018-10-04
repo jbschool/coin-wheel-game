@@ -1,4 +1,4 @@
-import coinwheelgame.ConsoleGame;
+import coinwheelgame.*;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
