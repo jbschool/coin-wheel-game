@@ -1,11 +1,12 @@
 import coinwheelgame.ConsoleGame;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import static org.junit.Assert.*;
 
-
+@Ignore
 public class ConsoleGameTest {
 
     @Test()
