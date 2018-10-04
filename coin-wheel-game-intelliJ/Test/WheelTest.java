@@ -1,4 +1,4 @@
-import coinwheelgame.Wheel;
+import coinwheelgame.*;
 import org.junit.Test;
 
 public class WheelTest {

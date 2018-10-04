@@ -1,4 +1,4 @@
-import coinwheelgame.ConsoleGame;
+import coinwheelgame.*;
 import org.junit.Test;
 import org.junit.Ignore;
 
