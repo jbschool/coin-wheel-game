@@ -6,3 +6,4 @@ ant clean<br />
 ant buildSource<br />
 ant buildTest<br />
 ant test<br />
+ant run<br />
