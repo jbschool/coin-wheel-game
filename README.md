@@ -1,5 +1,5 @@
 # coin-wheel-game
-A game for fun and analysis
+A game for fun and analysis.
 
 To build and run tests using ant:
 ant clean
