@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * A console interface for a user to play the game
  *
- * @author Jon Bowen
+ * @author Jon Bowen, James Niedfeldt, Evan Ballinger, Doug McLaughlin, Levi Portenier
  * @version 0.0.1
  */
 public class ConsoleGame {

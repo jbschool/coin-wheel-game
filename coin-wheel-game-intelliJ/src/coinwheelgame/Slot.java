@@ -1,6 +1,9 @@
 package coinwheelgame;
 /**
  * A Slot object simulates one slot on the spinning wheel, and interacts with one coin object.
+ *
+ * @author Jon Bowen, James Niedfeldt, Evan Ballinger, Doug McLaughlin, Levi Portenier
+ * @version 0.0.1
  * */
 public class Slot {
 
